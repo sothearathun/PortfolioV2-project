@@ -1,0 +1,7 @@
+* {
+  box-sizing: border-box; 
+  /* Width/height includes content, padding, and border. Nothing added outside. */
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
