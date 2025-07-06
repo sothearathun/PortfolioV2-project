@@ -1,0 +1,23 @@
+/* Credits.module.css */
+
+.footer {
+  background: var(--color-secondary);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(127, 219, 218, 0.1);
+}
+
+.endingCredits {
+  color: #b8b8b8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.endingCredits div {
+  margin: 4px 0;
+}
+
+/* CSS Variables */
+:root {
+  --color-secondary: #0f0f23;
+}

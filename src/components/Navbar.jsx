@@ -1,21 +1,31 @@
-import React, {useState} from "react";
-import styles from "./Navbar.module.css";
-import { getImageUrl } from "../utils.js";
+import React from "react";
+import styles from "../styles/Navbar.module.css";
+// Import icons from react-icons
+import { HiMail } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
 
 export const Navbar = () => {
+  return (
+    <nav className={styles.navbar}>
+      <a className={styles.title} href="/">
+        Sotheara Thun
+      </a>
+      
+      <div className={styles.navItems}>
+        <a href="#home" className={styles.navLink}>Home</a>
+        <a href="#about" className={styles.navLink}>About</a>
+        <a href="#experience" className={styles.navLink}>Experience</a>
+        <a href="#projects" className={styles.navLink}>Projects</a>
+      </div>
 
-   const menuIconUrl = getImageUrl("nav/menuIcon.png");
-  console.log("Menu icon URL:", menuIconUrl);
-
-  return <nav className={styles.navbar}>
-    <a className={styles.title} href="/">Portfolio</a>
-    <div className={styles.menu}>
-      <img className={styles.menuBtn} src={getImageUrl("nav/menuIcon.png")} alt="menu-btn" />
-      <ul className={styles.menuItems}>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </div>
-  </nav>;
+      <div className={styles.socialIcons}>
+        <a href="mailto:thunsotheara01@gmail.com" className={styles.iconLink} target="_blank">
+          <HiMail />
+        </a>
+        <a href="https://github.com/sothearathun" className={styles.iconLink} target="_blank">
+          <FaGithub />
+        </a>
+      </div>
+    </nav>
+  );
 };
